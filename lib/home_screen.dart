@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
       _loading = false;
     });
 
-    debugPrint("Model output: $_output");
+
   }
 
   String getPrediction() {
@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
       return "Not Cat or Dog";
     }
 
-    return "${_labels![index]} ${(confidence * 100).toStringAsFixed(2)}%";
+    return "This is ${_labels![index]}";//"${_labels![index]} ${(confidence * 100).toStringAsFixed(2)}%";
   }
 
   @override
